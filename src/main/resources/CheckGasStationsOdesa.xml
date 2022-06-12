@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="CheckAwsOrders" verbose="1" parallel="tests" thread-count="1">
+    <test name="CheckAwsOrders">
+            <parameter name="systemPropertiesFile" value="KostyaSystemPropertiesFile"/>
+<!--        <parameter name="systemPropertiesFile" value="AndroidSystemPropertiesFile"/>-->
+
+        <classes>
+            <class name="tests.stations.CheckStations">
+            </class>
+        </classes>
+    </test>
+
+</suite>
